@@ -1,0 +1,11 @@
+# Extensions Directory #
+------------------------
+- The 'extensions' directory should only include functionality built on top of WordPress core functionality.
+- Any extensions should have the ability to be included or excluded without breaking the core theme functionality.
+- Functionality should be referenced in functions.php ( Ex. require get_template_directory() . '/extensions/extension/extension.php'; )
+- Extensions should have a consistent folder structure, for example:
+- extension
+-- extension.php
+-- css
+-- js
+-- images
