@@ -3,6 +3,8 @@
 /**
  * Root Elements
  */
+* @include box-sizing();
+
 html {
 	font-size: $base-font-size;
 	-webkit-font-smoothing: antialiased;
