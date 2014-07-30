@@ -3,7 +3,9 @@
 /**
  * Root Elements
  */
-* @include box-sizing();
+* {
+	@include box-sizing();
+}
 
 html {
 	font-size: $base-font-size;
