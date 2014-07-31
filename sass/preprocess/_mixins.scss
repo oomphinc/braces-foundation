@@ -12,6 +12,7 @@
 // Box Sizing
 
 // Clearfix
+// Our grid depends on this, all rows are clearfix-ed
 // @link http://nicolasgallagher.com/micro-clearfix-hack/
 @mixin clearfix() {
 	&:before,

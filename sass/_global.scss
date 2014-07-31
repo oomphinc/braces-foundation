@@ -3,20 +3,25 @@
 /**
  * Root Elements
  */
-* {
+
+/* A slightly better box sizing method
+ * @see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+html {
 	@include box-sizing();
 }
 
-html {
-	font-size: $base-font-size;
-	-webkit-font-smoothing: antialiased;
-}
-
-body {
-	height: 100%;
+*, *:before, *:after {
+	box-sizing: inherit;
 }
 
 html,
+body {
+	font-size: $base-font-size;
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+
 body {
 	height: 100%;
 }
