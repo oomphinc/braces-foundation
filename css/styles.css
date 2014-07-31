@@ -6,6 +6,8 @@
     content: " ";
     display: table; }
   [class*="block-grid-"]:after {
+    content: "";
+    display: table;
     clear: both; }
   [class*="block-grid-"] > li {
     display: block;
@@ -312,6 +314,8 @@
     content: " ";
     display: table; }
   .row:after {
+    content: "";
+    display: table;
     clear: both; }
   .row.collapse > .column,
   .row.collapse > .columns {
@@ -331,6 +335,8 @@
       content: " ";
       display: table; }
     .row .row:after {
+      content: "";
+      display: table;
       clear: both; }
     .row .row.collapse {
       width: auto;
@@ -340,6 +346,8 @@
         content: " ";
         display: table; }
       .row .row.collapse:after {
+        content: "";
+        display: table;
         clear: both; }
 
 .column,
@@ -2104,19 +2112,23 @@
 /**
  * Root Elements
  */
-* {
+/* A slightly better box sizing method
+ * @see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html {
-  font-size: 10px;
-  -webkit-font-smoothing: antialiased; }
-
-body {
-  height: 100%; }
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 html,
+body {
+  font-size: 10px;
+  height: 100%;
+  -webkit-font-smoothing: antialiased; }
+
 body {
   height: 100%; }
 
@@ -2140,6 +2152,8 @@ body {
     content: " ";
     display: table; }
   #page:after {
+    content: "";
+    display: table;
     clear: both; }
 
 h1,
